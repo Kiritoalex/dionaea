@@ -6,7 +6,8 @@ MAINTAINER Drops
 
 # Ui install
 RUN apt-get update
-RUN apt-get install -y python-pip python-dev git wget unzip  
+RUN apt-get install -y python-pip python-dev git wget unzip
+RUN apt-get upgrade
 RUN pip install Django pygeoip django-pagination django-tables2 django-compressor django-htmlmin django-filter
 
 # django-tables2-simplefilter
