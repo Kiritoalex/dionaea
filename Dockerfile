@@ -7,7 +7,7 @@ MAINTAINER Drops
 # Ui install
 RUN apt-get update
 RUN apt-get install -y python-pip python-dev git wget unzip  
-RUN easy_install Django pygeoip django-pagination django-tables2 django-compressor django-htmlmin django-filter
+RUN pip install Django pygeoip django-pagination django-tables2 django-compressor django-htmlmin django-filter
 
 # django-tables2-simplefilter
 RUN wget https://github.com/benjiec/django-tables2-simplefilter/archive/master.zip -O django-tables2-simplefilter.zip
